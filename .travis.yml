@@ -1,2 +1,7 @@
 language: csharp
 solution: AmazonHook.sln
+
+install:
+  - nuget restore AmazonHook.sln
+script:
+  - msbuild /p:Configuration=Release AmazonHook.sln
